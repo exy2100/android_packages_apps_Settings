@@ -90,6 +90,16 @@
             android:title="@*lineageos.platform:string/charging_speed"
             settings:controller="com.android.settings.fuelgauge.ChargingSpeedPreferenceController"
             settings:requiresService="lineagehealth" />
+
+        <!-- Wireless charging speed -->
+        <ListPreference
+            android:entries="@*lineageos.platform:array/charging_speed_entries"
+            android:entryValues="@*lineageos.platform:array/charging_speed_values"
+            android:key="wireless_charging_speed"
+            android:summary="%s"
+            android:title="@*lineageos.platform:string/wireless_charging_speed"
+            settings:controller="com.android.settings.fuelgauge.WirelessChargingSpeedPreferenceController"
+            settings:requiresService="lineagehealth" />
     </com.android.settingslib.widget.UntitledPreferenceCategory>
 
     <com.android.settingslib.widget.UntitledPreferenceCategory
